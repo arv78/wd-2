@@ -4,12 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=width-device, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="main.js"></script>
     </head>
     <body>
         <div>
             <p class="header">لطفا فرم زیر را پر کنید</p>
         </div>
         <div class="form">
+            <p id="uiMessage" style="color: red;"></p>
             <form method="POST" action="#">
                 <table>
                     <tr>
@@ -25,15 +27,15 @@
                     </tr>
                     <tr>
                         <td>نام کاربر</td>
-                        <td> <input type="text" name="uiName"/></td>
+                        <td> <input type="text" name="uiName" onkeypress="return isPersian(event)"/></td>
                         <td>نام خانوادگی کاربر</td>
-                        <td> <input type="text" name="uiSurname"/></td>
+                        <td> <input type="text" name="uiSurname" onkeypress="return isPersian(event)"/></td>
                     </tr>
                     <tr>
                         <td>Name:</td>
-                        <td> <input type="text" name="uiName"/></td>
+                        <td> <input type="text" name="uiName_EN" onkeypress="return isEnglish(event)"/></td>
                         <td>Surname:</td>
-                        <td> <input type="text" name="uiSurname"/></td>
+                        <td> <input type="text" name="uiSurname_EN" onkeypress="return isEnglish(event)"/></td>
                     </tr>
                     <tr>
                         <td>آدرس پست الکترونیکی </td>
@@ -41,7 +43,7 @@
                     </tr>
                     <tr>
                         <td>شماره تلفن </td>
-                        <td> <input type="text" name="uiPhone"/></td>
+                        <td> <input type="text" name="uiPhone" pattern="[0][9][1-9]-[0-9]{4}-[0-9]{4}" onkeypress="return isNumber(event)"/></td>
                         <td>وضعیت تاهل </td>
                         <td> 
                             <input type="radio" name="uiM_status" value="m"> متاهل </input>
@@ -50,7 +52,7 @@
                     </tr>
                     <tr>
                         <td>کد ملی</td>
-                        <td><input type="text" name="uiID"/></td>
+                        <td><input type="text" name="uiID" placeholder="120-345678-9" onkeypress="return isNumber(event)"/></td>
                         <td>تاریخ تولد</td>
                         <td><input type="text" name="uiB_date"/></td>
                     </tr>
@@ -62,7 +64,7 @@
                     </tr>
                     <tr>
                         <td>آدرس</td>
-                        <td><input type="text" name="uiAddress" class="address"/></td>
+                        <td><input type="text" name="uiAddress" class="address" onkeypress="return isPersian(event)"/></td>
                     </tr>
                     <tr><td>&nbsp;</td></tr>
                     <tr><td>&nbsp;</td></tr>
@@ -80,7 +82,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td colspan="2" style="text-align: right;"><input type="submit" name="uiSubmit" onclick="#" value="ارسال"/></td>
+                        <td colspan="2" style="text-align: right;"><input type="submit" name="uiSubmit" onclick="return validation()" value="ارسال"/></td>
                     </tr>
                 </table>
             </form>
