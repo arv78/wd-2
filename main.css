@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form {
     position: relative;
     top: 50px;
@@ -30,3 +31,37 @@ td {
     height: 100px;
 }
 
+=======
+.form {
+    position: relative;
+    top: 50px;
+    left: 28%;
+}
+@font-face{
+    font-family: "Btitr";
+    font-style: normal;
+    font-weight: 1000;
+    src: url("F:/fonts/B-Titr/BTitr Bold_0.ttf");
+}
+@font-face{
+    font-family: "BNaz";
+    font-style: normal;
+    font-weight: 1000;
+    src: url("F:/fonts/font/bnazanin.ttf");
+}
+.header {
+    font-family: "Btitr";
+    text-align: center;
+    font-size: larger;
+}
+td {
+    font-family: "BNaz";
+    font-size: 18px;
+    padding-top: 10px;
+}
+.address {
+    width: 300px;
+    height: 100px;
+}
+
+>>>>>>> 992c6177a7441ffde737befd11b819ae2b7f3ef6
