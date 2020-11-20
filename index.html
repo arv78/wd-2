@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>sample</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+    </head>
+    <body>
+        <form method="POST" action="#">
+            <table>
+                <tr>
+                    <td>عنوان:</td>
+                    <td>
+                        <select name="uiPronoun">
+                                <option value="-1">عنوان خود را انتخاب کنید</option>
+                                <option value="1">آقا</option>
+                                <option value="2">خانم</option>
+                                <option value="3">غیره</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>نام کاربر</td>
+                    <td> <input type="text" name="uiName"/></td>
+                    <td>نام خانوادگی کاربر</td>
+                    <td> <input type="text" name="uiSurname"/></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td> <input type="text" name="uiName"/></td>
+                    <td>Surname:</td>
+                    <td> <input type="text" name="uiSurname"/></td>
+                </tr>
+                <tr>
+                    <td>آدرس پست الکترونیکی </td>
+                    <td colspan="2"><input type="text" name="uiEmail"/></td>
+                </tr>
+                <tr>
+                    <td>شماره تلفن </td>
+                    <td> <input type="text" name="uiPhone"/></td>
+                    <td>وضعیت تاهل </td>
+                    <td> 
+                        <input type="radio" name="uiM_status" value="m"> متاهل </input>
+                        <input type="radio" name="uiM_status" value="s"> مجرد </input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>کد ملی</td>
+                    <td><input type="text" name="uiID"/></td>
+                    <td>تاریخ تولد</td>
+                    <td><input type="text" name="uiB_date"/></td>
+                </tr>
+                <tr>
+                    <td>رمز</td>
+                    <td><input type="text" name="uiPassword"/></td>
+                    <td>تکرار رمز</td>
+                    <td><input type="text" name="uiRep_password"/></td>
+                </tr>
+                <tr>
+                    <td>آدرس</td>
+                    <td rowspan="2"><input type="text" name="uiAddress"/></td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>انتخاب علاقه: </td>
+                    <td>
+                        <input type="checkbox" name="uiFav" value="music"> موسیقی</input>
+                        <input type="checkbox" name="uiFav" value="sport"> ورزش</input>
+                        <input type="checkbox" name="uiFav" value="social_media"> شبکه اجتماعی</input>
+                    </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr><td>&nbsp;</td></tr>    
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"><input type="submit" name="uiSubmit" onclick="#" value="ارسال"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
