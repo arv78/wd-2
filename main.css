@@ -1,8 +1,58 @@
 .form {
     position: relative;
     top: 50px;
-    left: 28%;
+    left: 20%;
 }
+.grid_form {
+    width: 950px;
+    display: grid;
+    grid-template-columns: 140px 400px 110px 150px;
+    grid-template-areas: 
+    'lb1 onv onv onv'
+    'lb2 esm lb3 esm_khan'
+    'lb4 name lb5 surname'
+    'lb6 email email email'
+    'lb7 phone lb8 mar'
+    'lb9 id lb10 B_date'
+    'lb11 pass lb12 rep_pass'
+    'lb13 address address address'
+    'lb14 fav fav fav'
+    'sub sub sub sub';
+    grid-gap: 20px;
+}
+
+.lb1 {grid-area: lb1;}
+.lb2 {grid-area: lb2;}
+.lb3 {grid-area: lb3;}
+.lb4 {grid-area: lb4;}
+.lb5 {grid-area: lb5;}
+.lb6 {grid-area: lb6;}
+.lb7 {grid-area: lb7;}
+.lb8 {grid-area: lb8;}
+.lb9 {grid-area: lb9;}
+.lb10 {grid-area: lb10;}
+.lb11 {grid-area: lb11;}
+.lb12 {grid-area: lb12;}
+.lb13 {grid-area: lb13;}
+.lb14 {grid-area: lb14;}
+
+.onv {grid-area: onv;}
+.esm {grid-area: esm;}
+.esm_khan {grid-area: esm_khan;}
+.name {grid-area: name;}
+.surname {grid-area: surname;}
+.email {grid-area: email;}
+.phone {grid-area: phone;}
+.mar {grid-area: mar;}
+.id {grid-area: id;}
+.B_date {grid-area: B_date;}
+.pass {grid-area: pass;}
+.rep_pass {grid-area: rep_pass;}
+.address {grid-area: address;}
+.fav {grid-area: fav;}
+.sub {grid-area: sub; text-align: right;}
+
+
 @font-face{
     font-family: "Btitr";
     font-style: normal;
@@ -20,16 +70,42 @@
     text-align: center;
     font-size: larger;
 }
-td {
-    font-family: "BNaz";
-    font-size: 18px;
-    padding-top: 10px;
-}
 .address {
     width: 300px;
-<<<<<<< HEAD
-    height: 100px;
-=======
     height: 100px;
 }
->>>>>>> 37f3c6df809b74ddcdfdc05a124b8a649d017bcc
+div form div div {
+    font-family: "BNaz";
+    font-size: 18px;
+}
+@media (max-width: 1500px) {
+    .form {
+        left: 10%;
+    }
+}
+@media (max-width: 1000px) {
+    .form {
+        left: 0%;
+    }
+}
+@media (max-width: 800px) {
+    .grid_form {
+        grid-template-areas: 
+        'lb1 onv'
+        'lb2 esm '
+        'lb3 esm_khan'
+        'lb4 name'
+        'lb5 surname'
+        'lb6 email'
+        'lb7 phone'
+        'lb8 mar'
+        'lb9 id'
+        'lb10 B_date'
+        'lb11 pass'
+        'lb12 rep_pass'
+        'lb13 address'
+        'lb14 fav'
+        'sub sub';
+        grid-gap: 10px;
+    }
+}

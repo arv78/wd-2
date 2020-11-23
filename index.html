@@ -13,78 +13,52 @@
         <div class="form">
             <p id="uiMessage" style="color: red;"></p>
             <form method="POST" action="#">
-                <table>
-                    <tr>
-                        <td>عنوان:</td>
-                        <td>
-                            <select name="uiPronoun" style="font-family: 'BNaz';">
-                                    <option value="-1">عنوان خود را انتخاب کنید</option>
-                                    <option value="1">آقا</option>
-                                    <option value="2">خانم</option>
-                                    <option value="3">غیره</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>نام کاربر</td>
-                        <td> <input type="text" name="uiName" dir="auto" /></td>
-                        <td>نام خانوادگی کاربر</td>
-                        <td> <input type="text" name="uiSurname" dir="auto" /></td>
-                    </tr>
-                    <tr>
-                        <td>Name:</td>
-                        <td> <input type="text" name="uiName_EN" onkeypress="return isEnglish(event)"/></td>
-                        <td>Surname:</td>
-                        <td> <input type="text" name="uiSurname_EN" onkeypress="return isEnglish(event)"/></td>
-                    </tr>
-                    <tr>
-                        <td>آدرس پست الکترونیکی </td>
-                        <td><input type="text" name="uiEmail" style="width: 300px;"/></td>
-                    </tr>
-                    <tr>
-                        <td>شماره تلفن </td>
-                        <td> <input type="text" name="uiPhone" value="09" pattern="[0][1-9]{2}[0-9]{4}[0-9]{4}" style="font-family: 'BNaz';" onkeypress="return isNumber(event)"/></td>
-                        <td>وضعیت تاهل </td>
-                        <td> 
-                            <input type="radio" name="uiM_status" value="m"> متاهل </input>
-                            <input type="radio" name="uiM_status" value="s"> مجرد </input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>کد ملی</td>
-                        <td><input type="text" name="uiID" placeholder="120-345678-9" style="font-family: 'BNaz';" onkeypress="return isNumber(event)"/></td>
-                        <td>تاریخ تولد</td>
-                        <td><input type="text" name="uiB_date" style="font-family: 'BNaz';" placeholder="1399/09/09" onkeypress="return isNumber_(event)"/></td>
-                    </tr>
-                    <tr>
-                        <td>رمز</td>
-                        <td><input type="password" name="uiPassword" onkeypress="return isall(event)" /></td>
-                        <td>تکرار رمز</td>
-                        <td><input type="password" name="uiRep_password" onkeypress="return isall(event)" /></td>
-                    </tr>
-                    <tr>
-                        <td>آدرس</td>
-                        <td><input type="text" name="uiAddress" class="address" dir="auto" /></td>
-                    </tr>
-                    <tr><td>&nbsp;</td></tr>
-                    <tr><td>&nbsp;</td></tr>
-                    <tr>
-                        <td>انتخاب علاقه: </td>
-                        <td>
-                            <input type="checkbox" name="uiFav" value="music"> music</input>
-                            <input type="checkbox" name="uiFav" value="sport"> sports</input>
-                            <input type="checkbox" name="uiFav" value="social_media"> social media</input>
-                        </td>
-                    </tr>
-                    <tr><td>&nbsp;</td></tr>
-                    <tr><td>&nbsp;</td></tr>    
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td colspan="2" style="text-align: right;"><input type="submit" name="uiSubmit" onclick="return validation()" value="ارسال"/></td>
-                    </tr>
-                </table>
+                <div class="grid_form">
+                    <div class="lb1">عنوان:</div>
+                    <div class="onv">
+                        <select name="uiPronoun" style="font-family: 'BNaz';">
+                            <option value="-1">عنوان خود را انتخاب کنید</option>
+                            <option value="1">آقا</option>
+                            <option value="2">خانم</option>
+                            <option value="3">غیره</option>
+                        </select>
+                    </div>
+                    <div class="lb2">نام کاربر</div>
+                    <div class="esm"><input type="text" name="uiName" dir="auto" /></div>
+                    <div class="lb3">نام خانوادگی کاربر</div>
+                    <div class="esm_khan"><input type="text" name="uiSurname" dir="auto" /></div>
+                    <div class="lb4">Name:</div>
+                    <div class="name"><input type="text" name="uiName_EN" onkeypress="return isEnglish(event)"/></div>
+                    <div class="lb5">Surname:</div>
+                    <div class="surname"><input type="text" name="uiSurname_EN" onkeypress="return isEnglish(event)"/></div>
+                    <div class="lb6">آدرس پست الکترونیکی</div>
+                    <div class="email"><input type="text" name="uiEmail" style="width: 300px;"/></div>
+                    <div class="lb7">شماره تلفن</div>
+                    <div class="phone"><input type="text" name="uiPhone" value="09" pattern="[0][1-9]{2}[0-9]{4}[0-9]{4}" style="font-family: 'BNaz';" onkeypress="return isNumber(event)"/></div>
+                    <div class="lb8">وضعیت تاهل</div>
+                    <div class="mar">
+                        <input type="radio" name="uiM_status" value="m"> متاهل </input>
+                        <input type="radio" name="uiM_status" value="s"> مجرد </input>
+                    </div>
+                    <div class="lb9">کد ملی</div>
+                    <div class="id"><input type="text" name="uiID" placeholder="120-345678-9" style="font-family: 'BNaz';" onkeypress="return isNumber(event)"/></div>
+                    <div class="lb10">تاریخ تولد</div>
+                    <div class="B_date"><input type="text" name="uiB_date" style="font-family: 'BNaz';" placeholder="1399/09/09" onkeypress="return isNumber_(event)"/></div>
+                    <div class="lb11">رمز</div>
+                    <div class="pass"><input type="password" name="uiPassword" onkeypress="return isall(event)" /></div>
+                    <div class="lb12">تکرار رمز</div>
+                    <div class="rep_pass"><input type="password" name="uiRep_password" onkeypress="return isall(event)" /></div>
+                    <div class="lb13">آدرس</div>
+                    <div class="address"><input type="text" name="uiAddress" class="address" dir="auto" /></div>
+                    <div class="lb14">انتخاب علاقه</div>
+                    <div class="fav">
+                        <input type="checkbox" name="uiFav" value="music"> music</input>
+                        <input type="checkbox" name="uiFav" value="sport"> sports</input>
+                        <input type="checkbox" name="uiFav" value="social_media"> social media</input>
+                    </div>
+                    <div class="sub"><input type="submit" name="uiSubmit" onclick="return validation()" value="ارسال"/></div>
+
+                </div>
             </form>
         </div>
     </body>
