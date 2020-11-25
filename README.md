@@ -14,3 +14,9 @@ A validation form implemented by HTML/CSS/JavaScript
 -> index.html
 -> main.css
 -> main.js
+
+(Sources
+-- https://www.w3resource.com/javascript/form/email-validation.php
+-- https://www.w3schools.com/howto/howto_css_responsive_form.asp
+-- https://www.w3schools.com/cssref/pr_grid-template-rows.asp
+)
